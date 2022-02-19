@@ -1,0 +1,7 @@
+name: Add clang-cl problem matcher
+runs:
+  using: composite
+  steps:
+    - name: Add clang-cl problem matcher
+      shell: bash
+      run: echo '::add-matcher::${{github.action_path}}/clang-cl-problem-matcher.json'
